@@ -19,7 +19,7 @@ class DriftGuard < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pgomes13/drift-guard-engine/releases/download/v1.0.5/drift-guard_1.0.5_darwin_arm64.tar.gz"
-      sha256 "7bc952e2978c1888e4dd92bbfafd1760f4a5febc562a904c82a665bae7ca98b4"
+      sha256 "dde4e742f5b941bba7a84a9f23e2a827d75c9ce77346a042ce90a87c81adc389"
 
       define_method(:install) do
         bin.install "drift-guard"
