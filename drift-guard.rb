@@ -11,7 +11,7 @@ class DriftGuard < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/pgomes13/drift-guard-engine/releases/download/v2.6.3/drift-guard_2.6.3_darwin_amd64.tar.gz"
-      sha256 "3bcd41958f0cbce5c30a2fed1ad5135987f27a4b489af2978f4f218bd87f05a7"
+      sha256 "87153601a995572359e2785c42eb81a9a0761cd1dd1de9d7fff772232f4e63bc"
 
       define_method(:install) do
         bin.install "drift-guard"
@@ -19,7 +19,7 @@ class DriftGuard < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/pgomes13/drift-guard-engine/releases/download/v2.6.3/drift-guard_2.6.3_darwin_arm64.tar.gz"
-      sha256 "90ef9ce1c95ee4fb2702ed29bd0b934e872354ce9e3cda98b73761205d8c7ac5"
+      sha256 "cbd9caf4b7b604f6eb986522daf1a5b1e208939404f06369609709cc49073d7c"
 
       define_method(:install) do
         bin.install "drift-guard"
@@ -30,14 +30,14 @@ class DriftGuard < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/pgomes13/drift-guard-engine/releases/download/v2.6.3/drift-guard_2.6.3_linux_amd64.tar.gz"
-      sha256 "cfb31ff158551f95f6cb994b9f8b3d2320f82f59e5ea9cf9c7f9945527703040"
+      sha256 "a0459d64a99065f084772c76fe1bff526fc74c1e69f6392589eb4490e115f406"
       define_method(:install) do
         bin.install "drift-guard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/pgomes13/drift-guard-engine/releases/download/v2.6.3/drift-guard_2.6.3_linux_arm64.tar.gz"
-      sha256 "217fba77ef1b987eb2aad9fbd51bd74fa41105d4b7433293cd45b5cacebab58d"
+      sha256 "aa7cbd88f75fa21adf7aac233fa23ab21b44f2b9dffb410833a36faf49c63ace"
       define_method(:install) do
         bin.install "drift-guard"
       end
