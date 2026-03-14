@@ -5,21 +5,21 @@
 class DriftGuard < Formula
   desc "Schema diff engine that detects breaking vs. non-breaking API contract changes across OpenAPI, GraphQL, and gRPC schemas."
   homepage "https://github.com/pgomes13/drift-guard-engine"
-  version "4.0.3"
+  version "4.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.0.3/drift-guard_4.0.3_darwin_amd64.tar.gz"
-      sha256 "32257213d5ce5053b435f56f4afd6f9191dff0e7be5179dd5670ad2a9423cded"
+      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.1.0/drift-guard_4.1.0_darwin_amd64.tar.gz"
+      sha256 "2153f76fe7fbab046d6cdb3f56a513ab9d0915dd412431bef9aa0df4a7e62caa"
 
       define_method(:install) do
         bin.install "drift-guard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.0.3/drift-guard_4.0.3_darwin_arm64.tar.gz"
-      sha256 "c3bd359cb266576a4e56127c1497eae3310dc92213f7a10fb0e8df0cdf9cdb9f"
+      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.1.0/drift-guard_4.1.0_darwin_arm64.tar.gz"
+      sha256 "402f1055167af891f846447c869c28f2181889fc8aa0582d381cf419cab03a33"
 
       define_method(:install) do
         bin.install "drift-guard"
@@ -29,15 +29,15 @@ class DriftGuard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.0.3/drift-guard_4.0.3_linux_amd64.tar.gz"
-      sha256 "d98118db58ad7bbb6d3ba973495ba9602b37686f7eea95d319a969251b2b2834"
+      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.1.0/drift-guard_4.1.0_linux_amd64.tar.gz"
+      sha256 "3ed57ec3c3d0928448d773b70cc9d71a0b0ef607329c4b633da0a31a948a826f"
       define_method(:install) do
         bin.install "drift-guard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.0.3/drift-guard_4.0.3_linux_arm64.tar.gz"
-      sha256 "0e3f2f4325e5aeab56e49ae69ffff8bcaf23a83206c0f830681cb5675d53fd36"
+      url "https://github.com/pgomes13/drift-guard-engine/releases/download/v4.1.0/drift-guard_4.1.0_linux_arm64.tar.gz"
+      sha256 "a389a3608525e54fe47318d15ba56bacb1a59286cc027f3d14d27f09a1d40b66"
       define_method(:install) do
         bin.install "drift-guard"
       end
